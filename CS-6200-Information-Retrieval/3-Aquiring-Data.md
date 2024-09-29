@@ -1,4 +1,4 @@
-# Week 3 Reading Summaries
+# Week 3 - Aquiring Data Reading Summaries
 
 ## CMS Ch 3:  _*"Crawls and Feeds"*_
 
