@@ -17,11 +17,11 @@ There is no single required text for the course; however, we will refer to three
 
 _Reading_: CMS chap. 1
 
-### 2. [Architecture of a Search Engine](/workspaces/NU-Notes/CS-6200-Information-Retrieval/Lectures/cs6200-f24-2.pdf)
+### 2. [Architecture of a Search Engine](/CS-6200-Information-Retrieval/Lectures/cs6200-f24-2.pdf)
 
 _Reading_: CMS ch. 2
 
-### 3. [Acquiring Data](/workspaces/NU-Notes/CS-6200-Information-Retrieval/Lectures/cs6200-f24-3.pdf)
+### 3. [Acquiring Data](/CS-6200-Information-Retrieval/Lectures/cs6200-f24-3.pdf)
 
 _Reading_: CMS chap. 3; MRS chap. 19 and 20
 
@@ -31,7 +31,7 @@ _Reading_: CMS chap. 3; MRS chap. 19 and 20
     - Detecting Duplicates
     - Noise Detection and Removal
 
-### 4. [Processing Text](/workspaces/NU-Notes/CS-6200-Information-Retrieval/Lectures/cs6200-f24-4.pdf)
+### 4. [Processing Text](/CS-6200-Information-Retrieval/Lectures/cs6200-f24-4.pdf)
 
 _Reading_: CMS chap. 4; MRS chap. 2 and 21
 
