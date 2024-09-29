@@ -13,7 +13,7 @@ There is no single required text for the course; however, we will refer to three
 
 ## Syllabus
 
-### 1. [Overview of Information Retrieval](/workspaces/NU-Notes/CS-6200-Information-Retrieval/Lectures/cs6200-f24-1.pdf)
+### 1. [Overview of Information Retrieval](/Lectures/cs6200-f24-1.pdf)
 
 _Reading_: CMS chap. 1
 
