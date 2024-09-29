@@ -38,62 +38,106 @@ _Reading_: CMS chap. 3; MRS chap. 19 and 20
 ##### 3.1 Deciding What to Search
 
 - **Key Idea**: Search engines rely heavily on the quality and relevance of the documents they index.
+
 - **Takeaway**: The more documents indexed, the more questions the search engine can answer, but low-quality documents can burden the ranking system.
 
 ##### 3.2 Crawling the Web
 
 - **Key Idea**: Web crawling is essential for obtaining documents for search engines. Crawling involves retrieving web pages by sending HTTP requests and storing the results.
+
 - **Important Figure**: _*Figure 3.1*_ shows the structure of a URL, breaking it into the scheme (e.g., HTTP), hostname, and resource path.
 
 ![CMS Figure 3.1](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-1.png)
 
 - **Challenges**: Crawling involves politeness policies to avoid overwhelming servers, multi-threading to optimize speed, and adhering to rules defined in the _*robots.txt*_ file.
+
+![CMS Fig 3.3](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-3.png)
+
 - **Freshness**: Search engines must regularly check for updates on web pages, using techniques like HTTP HEAD requests to avoid outdated (stale) copies of pages.
 
 ##### 3.2.4 Focused Crawling
 
 - **Key Idea**: Focused crawling targets specific topics, optimizing for relevance. Focused crawlers use techniques such as starting from topic-relevant seed URLs.
+
+    > A "topic-relevant seed URL" refers to an initial set of web addresses (URLs) selected specifically for a focused web crawler to begin its search. These URLs are chosen because they are highly relevant to the specific topic or domain the crawler is designed to explore.
+    >
+    > For example, if a crawler is designed to gather information about climate change, topic-relevant seed URLs might include URLs of authoritative climate research organizations, government agencies focused on environmental issues, or reputable scientific journals that frequently publish articles on climate-related topics.
+    >
+    >Starting from these topic-relevant seed URLs, the focused crawler follows hyperlinks to other relevant pages, allowing it to efficiently gather a body of content that aligns with the specific topic it is designed to search for. This approach helps reduce the indexing of irrelevant or off-topic content.
+
 - **Takeaway**: Vertical search engines (searching specific domains, like movies) use this strategy to avoid the irrelevant information of general web searches.
 
 ##### 3.2.5 Deep Web
 
 - **Key Idea**: The deep web consists of areas not easily accessible to crawlers, such as private sites, pages behind forms, and dynamically generated content.
+
 - **Takeaway**: Many valuable resources are hidden from traditional crawlers, requiring special techniques to access them.
 
 ##### 3.2.6 Sitemaps
 
 - **Key Idea**: Sitemaps provide crawlers with lists of URLs to help index content more efficiently.
+
 - **Important Figure**: _*Figure 3.8*_ shows an XML-based sitemap with metadata about URLs, such as modification dates and update frequencies.
+
+![CSM Fig 3.8](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-8.png)
 
 ##### 3.3 Crawling Documents and Email
 
-- **Key Idea**: Desktop search tools crawl local files and email. 
+- **Key Idea**: Desktop search tools crawl local files and email.
+
 - **Challenges**: Crawling desktop data requires quick indexing of new content, while managing privacy and permissions, particularly in shared networks.
 
 ##### 3.4 Document Feeds
 
 - **Key Idea**: Document feeds, like RSS, provide new content to search engines. These feeds are updated regularly and contain structured data.
+
 - **Important Figure**: _*Figure 3.9*_ demonstrates an RSS feed with two articles, including publish dates and content descriptions.
+
+![CMS Fig 3.9](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-9.png)
 
 ##### 3.5 The Conversion Problem
 
 - **Key Idea**: Search engines must handle many incompatible file formats, converting them to a common format (usually HTML or XML).
+
+    > Standard text file formats include raw text, RTF, HTML, XML, Microsoft Word, ODF (Open Document Format) and PDF (Portable Document Format)
+
 - **Takeaway**: Accurate conversion preserves essential formatting like headings and font sizes, which aid in search result ranking.
 
 ##### 3.6 Storing the Documents
 
 - **Key Idea**: Document storage requires efficient methods for random access, compression, and updates.
+
 - **Important Figure**: _*Figure 3.12*_ describes BigTable, a distributed storage system used to manage large-scale document storage efficiently, highlighting its tablet-based design.
+
+![CMS Fig 3.12](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-12.png)
 
 ##### 3.7 Detecting Duplicates
 
 - **Key Idea**: Detecting duplicates or near-duplicates reduces the indexing burden and improves search result relevance.
+
 - **Important Figure**: _*Figure 3.14*_ illustrates a fingerprinting process for identifying near-duplicate documents using 3-grams and hash values.
+
+    > The basic process of generating fingerprints is as follows:
+    >
+    >1. The document is parsed into words. Non-word content, such as punctuation, HTML tags, and additional whitespace, is removed (see section 4.3).
+    >
+    >2. The words are grouped into contiguous n-grams for some n. These are usually overlapping sequences of words (see section 4.3.5), although some techniques use non-overlapping sequences.
+    >
+    >3. Some of the n-grams are selected to represent the document.
+    >
+    >4. The selected n-grams are hashed to improve retrieval efficiency and further reduce the size of the representation.
+    >
+    >5. The hash values are stored, typically in an inverted index.
+
+![CMS Fig 3.14](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-14.png)
 
 ##### 3.8 Removing Noise
 
 - **Key Idea**: Many web pages contain extraneous content like ads or navigation links, which can degrade search quality.
+
 - **Takeaway**: Techniques have been developed to identify the main content block on a page, ensuring the search engine focuses on relevant text for better ranking results.
+
+![CMS Fig 3.17](/CS-6200-Information-Retrieval/Images/CMS-Fig-3-17.png)
 
 ---
 
