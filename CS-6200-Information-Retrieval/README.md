@@ -147,6 +147,102 @@ _Reading_: CMS chap. 3; MRS chap. 19 and 20
 
 ---
 
+#### MRS Ch 19: _*"Web Search Basics"*_
+
+##### **19.1 Background and History**
+
+- **Key Idea**: The web is vast, decentralized, and uncoordinated, making it difficult to index effectively for search engines.
+
+- **Takeaway**: Web search evolved from early search engines like Altavista and Yahoo, which struggled with taxonomy and scalability.
+
+##### **19.2 Web Characteristics**
+
+- **Key Idea**: The decentralized nature of web content creation causes significant variations in content quality, style, and trustworthiness.
+
+- **Important Figures**:
+  - _*Figure 19.1*_: Illustrates a dynamic web page created by querying a back-end database.
+![MRS Fig 19.1](/CS-6200-Information-Retrieval/Images/MRS-Fig-19-1.png)
+
+  - _*Figure 19.2*_: Shows a simple graph structure where web pages are nodes connected by directed hyperlinks.
+  ![MRS Fig 19.2](/CS-6200-Information-Retrieval/Images/MRS-Fig-19-2.png)
+
+  - _*Figure 19.4*_: Demonstrates the “bowtie” structure of the web, showing different categories (IN, OUT, SCC) and how they interconnect.
+  ![MRS Fig 19.4](/CS-6200-Information-Retrieval/Images/MRS-Fig-19-4.png)
+
+##### **19.3 Advertising as the Economic Model**
+
+- **Key Idea**: Advertising fuels web search, with models like CPM (cost per mil) and CPC (cost per click) being foundational.
+
+- **Takeaway**: Sponsored search is a profitable model, but click fraud (or click spam) is a significant challenge for advertisers and search engines.
+
+- **Important Figures**:
+  - _*Figure 19.6*_: Displays a typical search results page with both organic and sponsored search results.
+  ![MRS Fig 19.6](/CS-6200-Information-Retrieval/Images/MRS-Fig-19-6.png)
+
+##### **19.4 The Search User Experience**
+
+- **Key Idea**: Understanding user intent is critical for search engines to provide relevant results. Users generally fall into three categories:
+    1. **Informational queries**: Informational queries seek general information on a broad topic, such as leukemia or Provence. There is typically not a single web page that contains all the information sought; indeed, users with informational queries typically try to assimilate information from multiple web pages.
+
+    2. **Navigational queries**: seek the website or home page of a single entity that the user has in mind, say Lufthansa airlines. In such cases, the user’s expectation is that the very ﬁrst search result should be the home page of Lufthansa. The user is not interested in a plethora of documents containing the term Lufthansa; for such a user, the best measure of user satisfaction is precision at 1.
+
+    3. **Transactional queries**: is one that is a prelude to the user performing a transaction on the Web – such as purchasing a product, downloading a ﬁle or making a reservation. In such cases, the search engine should return results listing services that provide form interfaces for such transactions.
+
+- **Takeaway**: Search engines prioritize relevance, precision, and simplicity to provide a fast, user-friendly experience.
+
+- **Important Figures**:
+  - _*Figure 19.7*_: Presents the architecture of a web search engine, highlighting the relationship between the crawler, indexer, and the web.
+  ![MRS Fig 19.7](/CS-6200-Information-Retrieval/Images/MRS-Fig-19-7.png)
+
+##### **19.5 Index Size and Estimation**
+
+- **Key Idea**: Estimating the size of a search engine’s index is complicated by factors like dynamic pages and duplicate content.
+
+- **Takeaway**: The capture-recapture method is a common approach for estimating the relative sizes of search engine indexes, though it has limitations.
+
+#####  **19.6 Near-Duplicates and Shingling**
+
+- **Key Idea**: The web contains many near-duplicate pages, and search engines need efficient methods to detect and remove these from their indexes.
+
+- **Important Figures**:
+  - _*Figure 19.8*_: Shows how to use shingling and hashing to detect near-duplicate documents efficiently.
+  ![MRS Fig 19.8](/CS-6200-Information-Retrieval/Images/MRS-Fig-19-8.png)
+
+---
+
+#### MRS Ch 20: _*"Web Crawling and Indexes"*_
+
+##### **20.1 Overview**
+
+- **Key Idea**: Web crawling is the process of systematically gathering web pages to index for a search engine. Crawlers need to be efficient, polite, and scalable.
+
+- **Takeaway**: Crawlers must avoid traps, respect server restrictions, and gather high-quality pages to make search engines effective.
+
+##### **20.1.1 Features a Crawler Must Provide**
+
+- **Key Features**: Crawlers must be robust (avoid traps), polite (respect server rules), distributed, scalable, and ensure freshness of indexed content.
+  
+##### **20.2 Crawling**
+
+- **Key Idea**: Crawlers operate by starting with a set of seed URLs and traversing the web graph by fetching pages, extracting links, and queuing new URLs.
+
+- **Important Figures**:
+  - _*Figure 20.1*_: Depicts the basic crawler architecture, highlighting the flow from fetching a URL to parsing the page and updating the URL frontier.
+  ![MRS Fig 20.1](/CS-6200-Information-Retrieval/Images/MRS-Fig-20-1.png)
+
+  - _*Figure 20.2*_: Shows a distributed crawler architecture, where nodes cooperate to divide the web crawling workload.
+  ![MRS Fig 20.2](/CS-6200-Information-Retrieval/Images/MRS-Fig-20-2.png)
+
+##### **20.2.1 Crawler Architecture**
+
+- **Key Idea**: The architecture includes modules like a URL frontier, DNS resolver, fetcher, and a duplicate elimination module to efficiently process URLs and web pages.
+
+##### **20.2.2 DNS Resolution**
+
+- **Key Idea**: DNS resolution is often a bottleneck in web crawling, so caching DNS lookups and implementing asynchronous DNS resolution are common strategies to enhance performance.
+
+---
+
 ### 4. [Processing Text](/CS-6200-Information-Retrieval/Lectures/cs6200-f24-4.pdf)
 
 _Reading_: CMS chap. 4; MRS chap. 2 and 21
