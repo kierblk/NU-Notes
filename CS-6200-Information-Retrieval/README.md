@@ -29,7 +29,7 @@ _Reading_: CMS ch. 2
 
 ### 3. [Acquiring Data](/CS-6200-Information-Retrieval/Lectures/cs6200-f24-3.pdf)
 
-_Reading_: CMS chap. 3; MRS chap. 19 and 20
+_Reading_: [CMS chap. 3](/CS-6200-Information-Retrieval/Texts/CMS-Ch-3.pdf); MRS chap. 19 and 20
 
     - Crawling the Web
     - Document Conversion
@@ -245,7 +245,7 @@ _Reading_: CMS chap. 3; MRS chap. 19 and 20
 
 ### 4. [Processing Text](/CS-6200-Information-Retrieval/Lectures/cs6200-f24-4.pdf)
 
-_Reading_: CMS chap. 4; MRS chap. 2 and 21
+_Reading_: [CMS chap. 4](CS-6200-Information-Retrieval/Texts/CMS-Ch-4.pdf); MRS chap. 2 and 21
 
     - Text Statistics
     - Document Parsing
