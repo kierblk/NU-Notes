@@ -1,13 +1,19 @@
 # CS 6200 Information Retrieval
 
-Fall 2024 Semester
+**Fall 2024 Semester**
+
+This course provides an overview of the important issues in information retrieval, and how those issues affect the design and implementation of search engine software. The course emphasizes the technology used in Web search engines and the information retrieval theories and concepts that underlie all search applications. Mathematical experience including basic probability is strongly desirable.
+
+**Instructor**: [David Smith](http://www.ccs.neu.edu/home/dasmith), Associate Professor in Computer Science
 
 ## Course Texts
 There is no single required text for the course; however, we will refer to three different texts, and we strongly suggest following the readings from one or both of the following:
 
-- **CMS**: Search Engines: Information Retrieval in PracticeLinks to an external site.. Croft, Metzler and Strohman (Addison-Wesley).
-- **MRS**: Introduction to Information RetrievalLinks to an external site.. Manning, Raghavan, and Schütze (Cambridge).
-- **CIS**: Conversational Information SeekingLinks to an external site.. Zamani, Trippas, Dalton, and Radlinski (2023 arXiv draft).
+- **CMS**: [Search Engines: Information Retrieval in Practice](http://www.search-engines-book.com/) Croft, Metzler and Strohman (Addison-Wesley).
+
+- **MRS**: [Introduction to Information Retrieval](http://nlp.stanford.edu/IR-book/) Manning, Raghavan, and Schütze (Cambridge).
+
+- **CIS**: [Conversational Information Seeking](https://arxiv.org/abs/2201.08808) Zamani, Trippas, Dalton, and Radlinski (2023 arXiv draft).
 
 ---
 
