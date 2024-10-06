@@ -2,6 +2,129 @@
 
 ## THURSDAY, Sep 5, 2024
 
+Paraphrased Lecture Transcript:
+
+```Text
+Alright, thank you for your patience. The good news is that the first class of any course often 
+serves as an introduction or advertisement, explaining why the course is important and why you 
+should take it. This is especially true for philosophy classes, which ask questions like "Why are 
+we here?" and "Where are we going?" But for an information retrieval class, we can spend as much or 
+as little time on that as we like. The short introduction to this class is simple: everyone knows 
+what information retrieval is. Your grandmother knows what it is. Your family members know what 
+it is. 
+
+Information retrieval is something everyone uses. You can explain it at least at the level of the 
+strategies you use to find things. Once you look at a search results page, you might start to wonder 
+about the people building these pages. They are often siloed into different tasks, which can 
+sometimes lead to bad interface design. For example, when you search for information retrieval, 
+you might see little snippets at the top of the page. These snippets are passages of text extracted 
+from documents, and we'll talk about why you might want to do that later on.
+
+Google, for instance, might show a snippet that says, "Information retrieval is the process of 
+accessing data resources." This isn't the definition we'll settle on, but it's what Google is 
+advertising. They also have other elements like extracts from Wikipedia, which attempt to answer 
+the question. For example, Wikipedia might say, "Information retrieval in computing and information 
+science is the task of identifying and retrieving information system resources that are relevant to 
+an information need." This is a bit procedural, but it gives you an idea.
+
+There are also other interesting things on the search results page, like related searches and 
+snippets from other sources. These elements try to answer the user's question in different ways. For
+ example, you might see links to articles about artificial intelligence, machine translation, or the 
+ purpose of information retrieval.
+
+We could stop here and say, "This is an information retrieval system. Everyone knows that." But it's
+ useful to look at other examples to see how different systems handle information retrieval. For 
+ instance, if you're not logged into Google, you might get different results. This raises 
+ interesting questions about personalization and why it matters whether you're logged in or not.
+
+You don't have to use Google; you can use other search engines like DuckDuckGo, which might give you
+ different answers. DuckDuckGo, for example, uses some of Google's resources but wraps the interface 
+ differently. It might show longer snippets and still have some ads, which is another interesting 
+ aspect of information retrieval.
+
+Search engines often insert ads because people searching for specific things are giving information 
+about what they might respond to. This makes search a good place for ads, but it also makes 
+information retrieval an adversarial process, with different entities competing to capture your 
+attention.
+
+Information retrieval isn't just about search engines listing documents. It's also about trying to 
+give answers and infer what question the user is asking. For example, if you search for "where can 
+I grow black currants in the U.S.," the search engine has to interpret whether you're asking about 
+the climate or the legality of growing black currants.
+
+Information retrieval is also embedded in many other product categories, like shopping. If you're 
+Amazon, you need an information retrieval system to help customers find what they want. Even if 
+you're not going to work for Google or Microsoft, there's a long tail of information retrieval 
+applications that many businesses might be interested in.
+
+Information retrieval isn't just about web search. It's also about verticals, like searching for 
+technical documentation or books. For example, Google Scholar is a vertical search engine for 
+scholarly literature. It has specific metadata like authors, publication dates, and citations, which
+ help users find relevant information.
+
+In addition to these verticals, there are user interface issues, like conversational search engines.
+ These systems try to understand and respond to user queries in a more interactive way. For example, 
+ ChatGPT might give you a summary of information and then provide sources where you can learn more.
+
+However, these systems can also make mistakes. For example, ChatGPT might confidently present 
+information that isn't accurate, making it hard for users to judge the relevance of the results. 
+This is a user interface fail because it makes it difficult for users to determine whether the 
+information is reliable.
+
+So, what are we doing in this course? The main goal is to help you understand search engines,
+specifically how to evaluate and compare them and modify them for specific applications. Even if you
+ don't build a search engine from scratch, you should be able to tell when search engines are doing 
+ a good job.
+
+To provide this background, we'll cover important issues in information retrieval and search 
+engines. There are no required books, but there are foundational texts and more recent books on 
+conversational information seeking that I recommend.
+
+The course will be divided into two modes. The first half will adopt an architectural view, covering
+ the basic components of an information retrieval system. The second half will go back and swap out 
+ some of these basic answers for more complicated ones, building up better retrieval models and 
+ representations of documents.
+
+We'll also have practical programming assignments, which will be half of the grade. These 
+assignments will involve modifying starter code in Python and submitting it via GitHub. There's also
+ a course project, which can be done individually or in teams, where you'll design and evaluate a 
+ new information retrieval task.
+
+Finally, there's a midterm exam, which will be about 20% of the grade. This exam will test your 
+understanding of the basic components of an information retrieval system.
+
+There is a late policy for assignments. You get one extension of four calendar days, not for cause, 
+just because life happens. If you need more time for a specific reason, please let me know.
+
+TAs have not been finally assigned for this class, but I'll let you know when they are. I'll also 
+schedule office hours where you can come if you have questions or need help.
+
+Now, let's try to synthesize our understanding of information retrieval into a definition. 
+Information retrieval is concerned with the structure, analysis, organization, storage, searching, 
+and retrieval of information. Specifically, we mean documents, which can be text, images, sound, 
+video, etc.
+
+Documents are recorded in some way and have some sort of structure. They are created with the 
+intent of passing information to others. This distinguishes documents from random objects and from 
+highly structured database records.
+
+The primary factor on which information retrieval systems are evaluated is relevance. A relevant 
+document contains the information that a person was looking for when they submitted a query. This 
+definition acknowledges the fundamental problem of information retrieval: the user's intent is in 
+their brain, and we can only infer it from the query they type.
+
+There are many factors that influence relevance, such as the user's task, their prior knowledge,
+ and how much information they've already seen. We often reduce this to two dimensions: topical 
+ relevance and user relevance.
+
+To evaluate information retrieval systems, we use test collections and effectiveness measures like 
+precision and recall. These methods help us measure how well a system is doing its job.
+
+In addition to these theoretical issues, there are practical issues in building a search engine, 
+like building indices, scaling to large numbers of users, and filtering out bad data. We'll cover 
+these topics as well.
+```
+
 ## MONDAY, Sep 9, 2024
 
 ## THURSDAY, Sep 12, 2024
