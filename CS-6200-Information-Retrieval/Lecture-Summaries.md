@@ -1,66 +1,5 @@
 # Lecture Summaries
 
-## THURSDAY, Oct 3, 2024
-
-Paraphrased Lecture Transcript:
-
-```Text
-On Monday, we discussed the concept of comparing misspelled queries with a lexicon of correctly 
-spelled queries or previously issued queries. Simply knowing the number of changes between one 
-query and another might not be sufficient, as context can be crucial. This idea, which dates back 
-to the 1940s in computer science and information theory, involves the noisy channel model. 
-Essentially, when you want to send a message, you have a query in mind and you type it, but errors 
-can occur—mistyping, hitting the wrong keys, or forgetting spellings. In search engines, we reverse 
-this process: given a string with errors, we infer the correct query using a model that predicts 
-the types of errors likely to occur.
-
-Another component we need is a language model, which predicts the kinds of queries users are likely 
-to issue. For instance, a simple unigram model might list common words in a lexicon. A familiar 
-example is Scrabble, where letters have points indicating their frequency in the English language. 
-Common letters like 'E' and 'A' have lower points, while less common ones like 'X' and 'Z' have 
-higher points. This is a unigram language model of characters. We could also consider a bigram 
-model, which looks at the probability of one word following another.
-
-To tackle the noisy channel problem, we use the string with errors to infer the true sequence of 
-words the user intended. This involves the product of probabilities from the language model and the 
-error model. For example, the probability of typing 'E' when you meant 'W' might depend on keyboard 
-layout. If 'S' and 'A' are next to each other, the probability of mistyping one for the other is 
-higher. We could even use a mixture model to account for different keyboards or languages.
-
-In practice, we might start by tokenizing the query and gathering candidates for each token, 
-looking for small edit distances. We then use the noisy channel model to select the best sequence 
-of candidate words. We can also split and merge tokens to account for compound words or phrases.
-
-Spelling correction is just one example of the mismatch between user intent and actual queries. 
-Users often don't know the right terms to search for, leading to relevance feedback. This can be 
-explicit, where users mark relevant documents, or implicit, where we assume the top results are 
-relevant and use them to refine the query.
-
-Pseudo-relevance feedback can improve recall but might hurt precision. Users generally prefer query 
-suggestions, which are more transparent. Another challenge is that the same query terms can mean 
-different things to different users, depending on context like location or previous searches. This 
-leads to user modeling, which can be based on empirical data from query logs or more targeted data 
-from user profiles.
-
-Search engines also need to consider spatial information, as many queries are location-dependent. 
-This can be inferred from document metadata or user queries. For example, a search for 
-"movie times" might be more relevant if it includes the user's location.
-
-After retrieving results, search engines need to present them effectively. This involves generating 
-snippets that help users decide if a document is relevant. Snippets should include query terms and 
-be readable. Ads are another type of result, ranked by relevance, bids, and click-through rates.
-
-In some cases, clustering results can help users navigate large sets of results. Faceted 
-classification, common in product search, organizes results into predefined categories. 
-Cross-language search is another challenge, where queries and documents are in different languages. 
-This often involves translating queries and merging results from different languages.
-
-Finally, understanding how users interact with search engines is crucial. This involves collecting 
-data at different levels of granularity, from detailed user studies to large-scale query logs. 
-Observational and experimental studies can provide insights into user behavior and help improve 
-search engine performance.
-```
-
 ## MONDAY, Sep 30, 2024
 
 Paraphrased Lecture Transcript:
@@ -127,7 +66,7 @@ actual information needs. We can use various techniques, like query expansion, r
 and spelling correction, to improve search effectiveness and user satisfaction.
 ```
 
-### Lecture Key Points
+### Key Points
 
 1. **Search Engine Architecture:**
    - Offline components of a search engine, including indexing, data acquisition, transformation, and data structure creation to enhance user experience.
@@ -172,4 +111,127 @@ and spelling correction, to improve search effectiveness and user satisfaction.
     - Context vectors and vector space models represent words based on associations, helping refine search results.
     - Query logs provide insights into user behavior, supporting query expansion and reformulation based on observed actions.
 
-### Conclusion: Understanding user intent and refining queries through feedback and reformulation is essential for improving search engine architecture and user interaction.
+### Conclusion
+
+Building an effective search engine hinges on understanding and addressing the complexities of user
+intent, query formulation, and result relevance. By leveraging offline indexing processes, query
+reformulation techniques, and user behavior analysis, search engines can better match user needs
+with relevant information. Techniques like spelling correction, query expansion, and relevance
+feedback refine searches, while interfaces help bridge the gap between what users express and what
+they seek. Ultimately, continual improvement in these areas enhances user experience, delivering
+more accurate and efficient search results aligned with diverse information needs.
+
+## THURSDAY, Oct 3, 2024
+
+Paraphrased Lecture Transcript:
+
+```Text
+On Monday, we discussed the concept of comparing misspelled queries with a lexicon of correctly 
+spelled queries or previously issued queries. Simply knowing the number of changes between one 
+query and another might not be sufficient, as context can be crucial. This idea, which dates back 
+to the 1940s in computer science and information theory, involves the noisy channel model. 
+Essentially, when you want to send a message, you have a query in mind and you type it, but errors 
+can occur—mistyping, hitting the wrong keys, or forgetting spellings. In search engines, we reverse 
+this process: given a string with errors, we infer the correct query using a model that predicts 
+the types of errors likely to occur.
+
+Another component we need is a language model, which predicts the kinds of queries users are likely 
+to issue. For instance, a simple unigram model might list common words in a lexicon. A familiar 
+example is Scrabble, where letters have points indicating their frequency in the English language. 
+Common letters like 'E' and 'A' have lower points, while less common ones like 'X' and 'Z' have 
+higher points. This is a unigram language model of characters. We could also consider a bigram 
+model, which looks at the probability of one word following another.
+
+To tackle the noisy channel problem, we use the string with errors to infer the true sequence of 
+words the user intended. This involves the product of probabilities from the language model and the 
+error model. For example, the probability of typing 'E' when you meant 'W' might depend on keyboard 
+layout. If 'S' and 'A' are next to each other, the probability of mistyping one for the other is 
+higher. We could even use a mixture model to account for different keyboards or languages.
+
+In practice, we might start by tokenizing the query and gathering candidates for each token, 
+looking for small edit distances. We then use the noisy channel model to select the best sequence 
+of candidate words. We can also split and merge tokens to account for compound words or phrases.
+
+Spelling correction is just one example of the mismatch between user intent and actual queries. 
+Users often don't know the right terms to search for, leading to relevance feedback. This can be 
+explicit, where users mark relevant documents, or implicit, where we assume the top results are 
+relevant and use them to refine the query.
+
+Pseudo-relevance feedback can improve recall but might hurt precision. Users generally prefer query 
+suggestions, which are more transparent. Another challenge is that the same query terms can mean 
+different things to different users, depending on context like location or previous searches. This 
+leads to user modeling, which can be based on empirical data from query logs or more targeted data 
+from user profiles.
+
+Search engines also need to consider spatial information, as many queries are location-dependent. 
+This can be inferred from document metadata or user queries. For example, a search for 
+"movie times" might be more relevant if it includes the user's location.
+
+After retrieving results, search engines need to present them effectively. This involves generating 
+snippets that help users decide if a document is relevant. Snippets should include query terms and 
+be readable. Ads are another type of result, ranked by relevance, bids, and click-through rates.
+
+In some cases, clustering results can help users navigate large sets of results. Faceted 
+classification, common in product search, organizes results into predefined categories. 
+Cross-language search is another challenge, where queries and documents are in different languages. 
+This often involves translating queries and merging results from different languages.
+
+Finally, understanding how users interact with search engines is crucial. This involves collecting 
+data at different levels of granularity, from detailed user studies to large-scale query logs. 
+Observational and experimental studies can provide insights into user behavior and help improve 
+search engine performance.
+```
+
+### Key Points
+
+1. **Spelling Correction and Noisy Channel Model**:
+   - Comparing misspelled queries with a lexicon of correctly spelled queries using the noisy channel model.
+   - Incorporating language models (unigram, bigram) to predict query likelihood.
+   - The noisy channel model helps infer the correct query from an observed error string based on information theory.
+
+2. **Language Models**:
+   - Unigram and bigram models estimate the probability of word sequences, using examples like Scrabble.
+   - These models predict the likelihood of certain words following others to enhance query interpretation.
+
+3. **Relevance Feedback and Pseudo-Relevance Feedback**:
+   - Relevance feedback improves search results by leveraging user feedback on document relevance.
+   - Pseudo-relevance feedback refines queries by assuming the top search results are relevant and using them to improve recall and precision.
+
+4. **User Modeling and Context**:
+   - Understanding user context (location, prior queries) enhances search relevance.
+   - Aggregating user data through collaborative filtering and query logs allows for personalized and context-aware search results.
+
+5. **Summarization and Snippets**:
+   - Snippets summarize document content, helping users assess relevance without reading the entire document.
+   - Effective snippets use significant words and features like query terms, headings, and sentence position.
+
+6. **Sponsored Search and Ads**:
+   - Search engines rank and display ads based on relevance, bids, and click-through rates.
+   - Query expansion is crucial in ads due to their shorter text, enhancing ad visibility.
+
+7. **Clustering and Faceted Classification**:
+   - Clustering groups search results into categories for easier navigation.
+   - Faceted classification, used in product searches, helps users filter results by predefined categories (e.g., Amazon).
+
+8. **Cross-Language Search**:
+   - Cross-language search addresses challenges like query and document language mismatches.
+   - Techniques include query and document translation, leveraging statistical models and parallel corpora.
+
+9. **User Studies and Data Collection**:
+   - Studying user behavior via observational and experimental methods, including lab, field, and log analysis.
+   - The depth and scale of data collection vary depending on the method, each with trade-offs in naturalness and flexibility.
+
+10. **Granularity of Behavior Observation**:
+    - Observing user behavior across different timeframes: micro (milliseconds), meso (minutes to days), and macro (days to months).
+    - Comprehensive data collection helps in understanding user actions at various levels of granularity.
+
+### Conclusion
+
+Enhancing search engine performance relies on a combination of advanced techniques across spelling
+correction, language modeling, and user feedback to refine queries and improve relevance.
+Understanding user context and behavior is crucial in tailoring search results, while summarization
+and clustering methods enhance user experience by making information more accessible. Effective use
+of sponsored search, ads, and cross-language capabilities further broadens the scope and efficiency
+of search systems. Comprehensive user studies and behavior observation at various granularities
+provide valuable insights that drive ongoing improvements in search technology and user interaction,
+laying the foundation for future developments in personalized and intelligent search systems.
