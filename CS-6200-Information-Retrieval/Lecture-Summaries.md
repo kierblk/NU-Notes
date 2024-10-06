@@ -127,196 +127,49 @@ actual information needs. We can use various techniques, like query expansion, r
 and spelling correction, to improve search effectiveness and user satisfaction.
 ```
 
-### Lecture Key Topics
+### Lecture Key Points
 
-1. **Class Structure and Homework Questions:**
-   - Address quick questions about homework during class.
-   - Longer questions should be handled after class or during office hours.
+1. **Search Engine Architecture:**
+   - Offline components of a search engine, including indexing, data acquisition, transformation, and data structure creation to enhance user experience.
+   - The indexing process is critical for speeding up the search experience.
 
-2. **Search Engine Architecture:**
-   - Covered offline components of a simple search engine architecture.
-   - Discussed the indexing process, which includes data acquisition, transformation, and creating data structures to enhance user experience.
+2. **Query Process:**
+   - Users interact with the search engine to retrieve information, and understanding user intent (or information need) is vital.
+   - Observing user behavior, such as actual queries, clicks, and query reformulation, helps refine results.
 
-3. **Query Process:**
-   - Transitioning to the query process where users interact with the information system.
-   - Importance of understanding user intent or information need, separate from the actual query typed.
+3. **User Intent and Information Need:**
+   - Differentiating between user intent and the typed query, with various information needs, ranging from single-result searches to broad research topics.
+   - Categorizing information needs based on the type and number of relevant documents expected by the user.
 
-4. **User Intent and Information Need:**
-   - Categorizing information needs based on the number of relevant documents the user expects.
-   - Differentiating between single-result searches (e.g., finding a specific webpage) and open-ended research topics.
+4. **User Interaction and Search Engine Interfaces:**
+   - Design of search engine interfaces should bridge the gap between user intent and the query.
+   - Query formulation challenges arise due to vocabulary mismatches or unfamiliarity with search engines and topics.
 
-5. **User Interaction and Search Engine Interfaces:**
-   - Importance of user interaction in query formulation and search results.
-   - Designing search engine interfaces to bridge the gap between user intent and actual queries.
+5. **Challenges in Query Formulation:**
+   - Users may struggle to express their needs clearly, leading to potential mismatches in expected results.
+   - Interfaces, such as a single search box and query suggestions, aim to assist users in formulating more effective queries.
 
-6. **Challenges in Query Formulation:**
-   - Users may struggle to express their information needs due to unfamiliarity with search engines or the topic.
-   - Vocabulary mismatch between user queries and expert terminology.
+6. **Query Reformulation Techniques:**
+   - Techniques like stemming, spelling correction, segmentation, and query expansion improve search accuracy and efficiency.
+   - Query expansion is enhanced through association measures like co-occurrence analysis, mutual information, and chi-squared tests.
 
-7. **Query Reformulation Techniques:**
-   - Stemming and spelling correction to improve query accuracy.
-   - Segmentation to infer structure in ungrammatical sequences of query terms.
-   - Query expansion and substitution to enhance search effectiveness.
+7. **Relevance Feedback and Pseudo-Relevance Feedback:**
+   - Utilizing initial search results (pseudo-relevance feedback) to refine queries and improve search models.
+   - Feedback loops from top documents help optimize future search queries.
 
-8. **Relevance Feedback and Pseudo-Relevance Feedback:**
-   - Using initial search results to refine queries.
-   - Assuming top results are relevant to improve search models.
+8. **Spelling Correction and the Noisy Channel Model:**
+   - Addressing spelling errors in user queries using techniques such as Levenshtein distance and the Soundex algorithm for phonetic matching.
+   - The noisy channel model combines language models with error models to infer user intent using Bayes' rule.
 
-9. **Association Measures for Query Expansion:**
-   - Using co-occurrence analysis to find related terms.
-   - Techniques like Dice's coefficient, point-wise mutual information, and chi-squared tests.
+9. **Keyword and Natural Language Queries:**
+   - Short keyword queries (typically 2-3 words) contrast with human-answered natural language queries.
+   - Query selection and reformulation (explicit and implicit) play a role in search outcomes.
 
-10. **Spelling Correction:**
-    - Importance of correcting spelling errors in queries.
-    - Techniques like Levenshtein distance to measure edit distance between words.
-    - Soundex algorithm for phonetic matching.
+10. **Association Measures for Query Expansion:**
+    - Using techniques like Dice’s coefficient, mutual information, and chi-squared tests to find related terms and improve search relevance.
 
-11. **Noisy Channel Model:**
-    - Combining language models and channel models to correct errors in queries.
-    - Using Bayes' rule to infer the most likely intended query from the observed error string.
+11. **Context Vectors and Query Logs:**
+    - Context vectors and vector space models represent words based on associations, helping refine search results.
+    - Query logs provide insights into user behavior, supporting query expansion and reformulation based on observed actions.
 
-12. **Practical Applications:**
-    - Examples of query reformulation improving search effectiveness.
-    - Handling user reformulations and leveraging query logs for better search results.
-
-13. **Algorithm Complexity:**
-    - Discussing the time and space complexity of algorithms like Levenshtein distance.
-    - Practical considerations for scaling these algorithms in real-world applications.
-
-14. **Future Topics:**
-    - Further exploration of vector space models and context vectors.
-    - Continued discussion on the application of Bayes' rule in retrieval and query correction.
-
-### Mind Map: Search Engine Architecture and Query Process
-
-#### 1. Introduction
-
-- **Questions Handling**
-  - Quick questions about homework
-  - Longer questions after class or in office hours
-
-#### 2. Search Engine Architecture
-
-- **Indexing Process**
-  - Data acquisition
-  - Data transformation
-  - Data structure creation
-  - Speeding up user experience
-
-#### 3. Query Process
-
-- **User Interaction**
-  - User logs on and interacts
-  - Store of documents
-  - Index
-  - Login and evaluation interaction
-
-#### 4. User Intent and Information Need
-
-- **Understanding User Intent**
-  - Information need or query intent
-  - Observable actions vs. unobservable reasons
-  - Task accomplishment
-  - Existing knowledge
-
-- **Categorizing Information Needs**
-  - Number of relevant documents needed
-  - Single result vs. multiple results
-  - Types of documents (textual, legal, patents, etc.)
-  - User's task and end goal
-
-#### 5. Observing User Behavior
-
-- **Observable Actions**
-  - Actual queries typed
-  - Clicks on results
-  - Time spent on results
-  - Query reformulation
-
-#### 6. Query Formulation and User Interface
-
-- **Query Formulation**
-  - Single query box
-  - User interface widgets
-  - Query suggestions and reformulation
-
-- **Interaction with Search Results**
-  - Search engine results page (SERP)
-  - Clusters and one-box answers
-  - Direct effect on user experience
-
-#### 7. Design Challenges
-
-- **User Intent and Information Need**
-  - Bridging the gap between screen affordances and user intent
-  - Anomalous state of knowledge in search
-
-#### 8. Keyword Queries and Natural Language Queries
-
-- **Keyword Queries**
-  - Short number of keywords
-  - Average query length (2.3 words)
-  - Comparison with human-answered queries (30 words)
-
-- **Query Selection and Construction**
-  - Query reformulation
-  - Explicit vs. implicit reformulation
-
-#### 9. Techniques for Query Reformulation
-
-- **Stemming and Data-Oriented Mapping**
-  - Co-occurrence in query logs
-  - Constructing graphs and connected components
-
-- **Spelling Correction**
-  - Common spelling errors
-  - Edit distance (Levenshtein distance)
-  - Soundex algorithm
-
-- **Segmentation**
-  - Inferring structure in ungrammatical sequences
-
-- **Controlled Vocabularies**
-  - Industry-specific vocabularies (e.g., Mesh thesaurus)
-
-#### 10. Query Expansion and Rewriting
-
-- **Automatic Query Expansion**
-  - Adding terms in the background
-  - Semi-automatic expansion with user feedback
-
-- **Association Measures**
-  - Point-wise mutual information
-  - Expected mutual information
-  - Chi-squared test
-
-#### 11. Relevance Feedback
-
-- **Pseudo-Relevance Feedback**
-  - Learning from top retrieved documents
-  - Self-training and bootstrapping
-
-#### 12. Context Vectors
-
-- **Vector Space Models**
-  - Representing words by associated terms
-
-#### 13. Query Logs and User Behavior
-
-- **Using Query Logs**
-  - Expanding queries based on user behavior
-  - Query reformulation based on user actions
-
-#### 14. Noisy Channel Model
-
-- **Language Model and Channel Model**
-  - Probability distribution over strings
-  - Error model (edit distance)
-  - Bayes' rule for inference
-
-#### 15. Conclusion
-
-- **Summary**
-  - Importance of understanding user intent
-  - Techniques for improving query formulation and expansion
-  - Future directions in search engine architecture and user interaction
+### Conclusion: Understanding user intent and refining queries through feedback and reformulation is essential for improving search engine architecture and user interaction.
