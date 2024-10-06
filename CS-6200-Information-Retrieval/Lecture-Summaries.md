@@ -1,6 +1,6 @@
 # Lecture Summaries
 
-## Oct 3, 2024
+## THURSDAY, Oct 3, 2024
 
 Paraphrased Lecture Transcript:
 
@@ -61,7 +61,7 @@ Observational and experimental studies can provide insights into user behavior a
 search engine performance.
 ```
 
-## Sep 30, 2024
+## MONDAY, Sep 30, 2024
 
 Paraphrased Lecture Transcript:
 
