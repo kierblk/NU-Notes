@@ -1,5 +1,19 @@
 # Lecture Summaries
 
+## THURSDAY, Sep 5, 2024
+
+## MONDAY, Sep 9, 2024
+
+## THURSDAY, Sep 12, 2024
+
+## MONDAY, Sep 16, 2024
+
+## THURSDAY, Sep 19, 2024
+
+## MONDAY, Sep 23, 2024
+
+## THURSDAY, Sep 26, 2024
+
 ## MONDAY, Sep 30, 2024
 
 Paraphrased Lecture Transcript:
