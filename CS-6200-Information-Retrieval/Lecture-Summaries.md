@@ -29,18 +29,18 @@ an information need." This is a bit procedural, but it gives you an idea.
 
 There are also other interesting things on the search results page, like related searches and 
 snippets from other sources. These elements try to answer the user's question in different ways. For
- example, you might see links to articles about artificial intelligence, machine translation, or the 
- purpose of information retrieval.
+example, you might see links to articles about artificial intelligence, machine translation, or the 
+purpose of information retrieval.
 
 We could stop here and say, "This is an information retrieval system. Everyone knows that." But it's
- useful to look at other examples to see how different systems handle information retrieval. For 
- instance, if you're not logged into Google, you might get different results. This raises 
- interesting questions about personalization and why it matters whether you're logged in or not.
+useful to look at other examples to see how different systems handle information retrieval. For 
+instance, if you're not logged into Google, you might get different results. This raises 
+interesting questions about personalization and why it matters whether you're logged in or not.
 
 You don't have to use Google; you can use other search engines like DuckDuckGo, which might give you
- different answers. DuckDuckGo, for example, uses some of Google's resources but wraps the interface 
- differently. It might show longer snippets and still have some ads, which is another interesting 
- aspect of information retrieval.
+different answers. DuckDuckGo, for example, uses some of Google's resources but wraps the interface 
+differently. It might show longer snippets and still have some ads, which is another interesting 
+aspect of information retrieval.
 
 Search engines often insert ads because people searching for specific things are giving information 
 about what they might respond to. This makes search a good place for ads, but it also makes 
@@ -63,8 +63,8 @@ scholarly literature. It has specific metadata like authors, publication dates, 
  help users find relevant information.
 
 In addition to these verticals, there are user interface issues, like conversational search engines.
- These systems try to understand and respond to user queries in a more interactive way. For example, 
- ChatGPT might give you a summary of information and then provide sources where you can learn more.
+These systems try to understand and respond to user queries in a more interactive way. For example, 
+ChatGPT might give you a summary of information and then provide sources where you can learn more.
 
 However, these systems can also make mistakes. For example, ChatGPT might confidently present 
 information that isn't accurate, making it hard for users to judge the relevance of the results. 
@@ -73,22 +73,22 @@ information is reliable.
 
 So, what are we doing in this course? The main goal is to help you understand search engines,
 specifically how to evaluate and compare them and modify them for specific applications. Even if you
- don't build a search engine from scratch, you should be able to tell when search engines are doing 
- a good job.
+don't build a search engine from scratch, you should be able to tell when search engines are doing 
+a good job.
 
 To provide this background, we'll cover important issues in information retrieval and search 
 engines. There are no required books, but there are foundational texts and more recent books on 
 conversational information seeking that I recommend.
 
 The course will be divided into two modes. The first half will adopt an architectural view, covering
- the basic components of an information retrieval system. The second half will go back and swap out 
- some of these basic answers for more complicated ones, building up better retrieval models and 
- representations of documents.
+the basic components of an information retrieval system. The second half will go back and swap out 
+some of these basic answers for more complicated ones, building up better retrieval models and 
+representations of documents.
 
 We'll also have practical programming assignments, which will be half of the grade. These 
 assignments will involve modifying starter code in Python and submitting it via GitHub. There's also
- a course project, which can be done individually or in teams, where you'll design and evaluate a 
- new information retrieval task.
+a course project, which can be done individually or in teams, where you'll design and evaluate a 
+new information retrieval task.
 
 Finally, there's a midterm exam, which will be about 20% of the grade. This exam will test your 
 understanding of the basic components of an information retrieval system.
@@ -114,8 +114,8 @@ definition acknowledges the fundamental problem of information retrieval: the us
 their brain, and we can only infer it from the query they type.
 
 There are many factors that influence relevance, such as the user's task, their prior knowledge,
- and how much information they've already seen. We often reduce this to two dimensions: topical 
- relevance and user relevance.
+and how much information they've already seen. We often reduce this to two dimensions: topical 
+relevance and user relevance.
 
 To evaluate information retrieval systems, we use test collections and effectiveness measures like 
 precision and recall. These methods help us measure how well a system is doing its job.
@@ -127,15 +127,27 @@ these topics as well.
 
 ## MONDAY, Sep 9, 2024
 
+Paraphrased Lecture Transcript:
+
 ## THURSDAY, Sep 12, 2024
+
+Paraphrased Lecture Transcript:
 
 ## MONDAY, Sep 16, 2024
 
+Paraphrased Lecture Transcript:
+
 ## THURSDAY, Sep 19, 2024
+
+Paraphrased Lecture Transcript:
 
 ## MONDAY, Sep 23, 2024
 
+Paraphrased Lecture Transcript:
+
 ## THURSDAY, Sep 26, 2024
+
+Paraphrased Lecture Transcript:
 
 ## MONDAY, Sep 30, 2024
 
