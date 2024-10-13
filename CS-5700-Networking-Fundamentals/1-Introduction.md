@@ -30,7 +30,7 @@ Services Description:
 
 - The infrastructure that provides services to applications: Web streaming video, multimedia teleconferencing, email...
 - Provides the programming interface to distributed applications: "hooks" allowing sending/receiving apps to "connect" to and use Internet transport service.
-- Provides service optionas, analogous to the postal service
+- Provides service options, analogous to the postal service
 
 **What is a Protocol -->**
 
@@ -45,6 +45,32 @@ These are "rules" that dictate an interaction. Rules for specific messages sent 
 Network protocols are computers devices, rather than humans. However, these protocols govern all communication activity on the internet. 
 
 **Protocols define the format, order of messages sent and received among network entitites, and actions taken on msg transmission and receipt.**
+
+### Knowledge Check
+
+1. Which of the following descriptions below correspond to a "nuts-and-bolts" view of the Internet? Select one or more of the answers below that are correct. [Hint: more than one of answers below are correct].
+
+- [ ] A place I go for information, entertainment, and to communicate with people.
+- [ ] A platform for building network applications.
+- [x] A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.
+- [x] A collection of billions of computing devices, and packet switches interconnected by links.
+- [x] A "network of networks".
+
+2. Which of the following descriptions below correspond to a "services" view of the Internet? Select one or more of the answers below below that are correct below that are correct.  [Hint: more than one of answers below are correct].
+
+- [x] A platform for building network applications.
+- [ ] A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.
+- [x] A place I go for information, entertainment, and to communicate with people.
+- [ ] A "network of networks".
+- [ ] A collection of billions of computing devices, and packet switches interconnected by links.
+
+3. Which of the following human scenarios involve a protocol (recall: "Protocols define the format, order of messages sent and received among network entities, and actions taken on message transmission, receipt")? Select one or more answers below that are correct. Hint: more than one of answers below are correct.
+
+- [ ] A person sleeping.
+- [x] A student raiding his/her/their hand to as a really insightful question, followed by the teacher acknowledging the student, listening carefully to the question, and respeonding with a clear, insightful answer. And then thanking the student for the question, since teachers LOVE to get questions.
+- [x] Two people introducing themselves to each other.
+- [ ] A person reading a book.
+- [x] One person asking, and getting, the time to/from another person.
 
 ### 1.2 The Network Edge
 
