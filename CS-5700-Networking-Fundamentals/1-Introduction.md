@@ -117,3 +117,84 @@ Will be reviewed in greater detail in chapter 6
 
 #### Physical Media
 
+Some basic facts about physical media...
+
+- **bit**: propagates between transmitter/receiver pairs
+- **physical link**: what lies between transmitter and receiver
+- **guided media**: signals propagate in solid medida: copper, fiber, coax
+- **unguided media**: signals propagate freely: radio
+
+1. Twisted Pair (TP): two insulated copper wires
+
+- Category 5: 100 Mbps, 1 Gbps Ethernet
+- Category 6: 10 Gbps Ethernet
+
+2. Coaxial Cable: two concentric copper conductors
+
+- bidirectional
+- broadband
+  - multiple frequency channels on cable
+  - 100's Mbps per channel
+
+3. Fiber Optic Cable: glass fiber carrying light pulses, each pulse a bit
+
+- high-speed operation
+  - high-speed point-to-point transmission (10s - 100s Gbps)
+- low error rate
+  - repeaters spaced far apart
+  - immune to elctromagnetic noise
+
+4. Wireless Radio
+
+- signal carried in various "bands" in electromagnetic spectrum
+- no physical "wire"
+- broadcast, "half-duplex" (sender to receiver)
+- propagation environment effects
+  - reflection
+  - obstruction by objects
+  - interference / noise
+
+**Radio Types**
+
+- Wireless LAN (WiFi)
+- Wide-area (4G/5G)
+- Bluetooth: cable replacement
+  - short distances, limited raates
+- Terrestrial Microwave
+  - point-to-point, 45 Mbps channels
+- Satellite
+  - up to <100 Mbps (Starlink) download
+  - 270 msec ent-to-end delay (geostationary)
+
+### 1.2 Knowledge Check
+
+1. Match the Following:
+`Ethernet`, `802.11 WiFi`, `Cable Access Network`, `Digital Subscriber Line`, `4G cellular LTE`
+
+    A. Wired. Up to 10’s to 100’s of Mbps downstream per user. --> `Cable Access Network`
+
+    B. Wired. Up to 100's Gbps per link. --> `Ethernet`
+
+    C. Wired. Up to 10’s of Mbps downstream per user. --> `Digital Subscriber Line`
+
+    D. Wireless. Up to 10’s Mbps per device. --> `4G Cellular LTE`
+
+    E. Wired. Up to 1 Tbps per link.
+
+    F. Wireless. 10’s to 100’s of Mbps per device. --> `802.11 WiFi`
+
+    G. Wireless, up to 10's Kbps per device.
+
+2. Which of the following physical layer technologies has the highest transmission rate and lowest bit error rate in practice?
+
+    A. Twisted pair (e.g., CAT5, CAT6)
+
+    B. 802.11 WiFi Channel
+
+    C. Fiber optic cable --> `THIS one!`
+
+    D. Coaxial cable
+
+    E. 4G/5G cellular
+
+    F. Satellite channel
