@@ -1,7 +1,12 @@
 # CS 5700 Networking Fundamentals
 
 **Fall 2024 Semester**
-Studies network protocols, focusing on modeling and analysis, and architectures. Topics include network architecture, software, and performance. Discusses encoding and framing. Presents the different harmonizing functions needed for communication and efficient operation of computer networks and discusses examples of Ethernet and wireless networks. Covers link layer protocols including HDLC and PPP; packet framing; spanning tree, error detection techniques, and automatic repeat request algorithms.
+Studies network protocols, focusing on modeling and analysis, and architectures. Topics include
+network architecture, software, and performance. Discusses encoding and framing. Presents the
+different harmonizing functions needed for communication and efficient operation of computer
+networks and discusses examples of Ethernet and wireless networks. Covers link layer protocols
+including HDLC and PPP; packet framing; spanning tree, error detection techniques, and automatic
+repeat request algorithms.
 
 **Instructor**: Mais Nijim
 
