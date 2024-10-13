@@ -12,7 +12,9 @@ repeat request algorithms.
 
 ## Course Texts
 
-- Larry Peterson, Bruce Davie. Computer Networks: A Systems Approach, sixth Edition (https://www.amazon.com/Computer-Networks-Approach-Kaufmann-Networking/dp/0128182008). Morgan Kauffman. 2022.
+- Larry Peterson, Bruce Davie. Computer Networks: A Systems Approach, sixth Edition
+(https://www.amazon.com/Computer-Networks-Approach-Kaufmann-Networking/dp/0128182008).
+Morgan Kauffman. 2022.
 
 - J.F. Kurose, K.W. Ross. Computer Networking: a Top-Down Approach, 8th edition, Pearson, 2020.
 
