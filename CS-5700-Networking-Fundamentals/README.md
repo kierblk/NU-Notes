@@ -23,7 +23,7 @@ Morgan Kauffman. 2022.
 ## Syllabus
 
 | Week   	|  Topics	| Reading |   Lecture Notes	| Done?|
-|:--:	|---	|---	|--- | -- |
+|:--:	|---	|:--:	|:--: | :--: |
 |  1 	|   Welcome, Python, PyCharm, and Postman	|   	|   | [x] |
 |  2 	|   Applications, Requirements, Network Architecture | 1.1, 1.2, 1.3	| [Module 2](2.md)   	|  [x] |
 |  3 	|   Implementing Network Software, Performance, Perspectives on Connecting | 1.4, 1.5, 2.1	| [Module 3](3.md)    	|  [x] |
