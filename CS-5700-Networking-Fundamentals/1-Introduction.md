@@ -8,11 +8,13 @@ covers the same information.
 - [Slides](/CS-5700-Networking-Fundamentals/Lectures/Chapter-1-v8.2.pdf)
 - [Additional Materials](https://gaia.cs.umass.edu/kurose_ross/videos/1/)
 
-  1.1 Overview
+[1.1 Overview](https://github.com/kierblk/NU-Notes/blob/main/CS-5700-Networking-Fundamentals/1-Introduction.md#11-overview)
 
-  1.2 Network Edge
+[1.2 Network Edge](https://github.com/kierblk/NU-Notes/blob/main/CS-5700-Networking-Fundamentals/1-Introduction.md#12-network-edge)
 
-  1.3 Network Core
+[1.3 Network Core](https://github.com/kierblk/NU-Notes/blob/main/CS-5700-Networking-Fundamentals/1-Introduction.md#13-network-core)
+
+[1.4 Performance](https://github.com/kierblk/NU-Notes/blob/main/CS-5700-Networking-Fundamentals/1-Introduction.md#14-performance)
 
 ## 1.1 Overview
 
@@ -388,4 +390,5 @@ The total of 70 connections doesn’t imply 70 different conversations spanning 
 
       - **Analysis**: The users on average use very little bandwidth but occasionally spike to very high usage that exceeds the total channel capacity. Packet switching is advantageous here because it can handle these variable, bursty traffic patterns more efficiently. Even though the total spike exceeds the channel’s nominal capacity, the likelihood of all users peaking simultaneously is low (assuming the spikes are brief and asynchronous), so packet switching can manage these peaks by buffering and managing the data packets as bandwidth becomes available.
 
-## 1.4 Performance: Delay, Loss, and Throughput in Computer Networks
+## 1.4 Performance
+
