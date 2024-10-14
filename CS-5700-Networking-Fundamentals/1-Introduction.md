@@ -285,3 +285,107 @@ Is packet switching a “slam dunk winner”?
 ### Internet as a "Network of Networks"
 
 ![](/CS-5700-Networking-Fundamentals/Lectures/1-45.png)
+
+### 1.3 Knowledge Check
+
+1. Routing versus forwarding. Choose one the following two definitions that makes the correct distinction between routing versus forwarding.
+
+    - [X] Forwarding is the local action of moving arriving packets from router’s input link to appropriate router output link, while routing is the global action of determining the source-destination paths taken by packets.
+
+    - [ ] Routing is the local action of moving arriving packets from router’s input link to appropriate router output link, while forwarding is the global action of determining the source-destination paths taken by packets.
+
+2. Packet switching versus circuit switching. Which of the characteristics below are associated with the technique of packet switching? Select all correct answers. [Hint: more than one of the answers is correct].
+
+    - [x] Congestion loss and variable end-end delays are possible with this technique.
+
+    - [ ] Frequency Division Multiplexing (FDM) and Time Division Multiplexing (TDM) are two approaches for implementing this technique.
+
+    - [x] Resources are used on demand, not reserved in advance.
+
+    - [ ] Reserves resources needed for a call from source to destination.
+
+    - [x] This technique is used in the Internet.
+
+    - [ ] This technique was the basis for the telephone call switching during the 20th century and into the beginning of this current century.
+
+    - [x] Data may be queued before being transmitted due to other user’s data that’s also queueing for transmission.
+
+3. Packet switching versus circuit switching. Which of the characteristics below are associated with the technique of circuit switching? Select all correct answers. [Hint: more than one of the answers is correct].
+
+    - [ ] Data may be queued before being transmitted due to other user’s data that’s also queueing for transmission.
+
+    - [x] Frequency Division Multiplexing (FDM) and Time Division Multiplexing (TDM) are two approaches for implementing this technique.
+
+    - [ ] Congestion loss and variable end-end delays are possible with this technique.
+
+    - [ ] This technique is used in the Internet.
+
+    - [x] This technique was the basis for the telephone call switching during the 20th century and into the beginning of this current century.
+
+    - [ ] Resources are used on demand, not reserved in advance.
+
+    - [x] Reserves resources needed for a call from source to destination.
+  
+4. Consider the circuit-switched network shown in the figure below, with four circuit switches A, B, C, and D. Suppose there are 20 circuits between A and B, 19 circuits between B and C, 15 circuits between C and D, and 16 circuits between D and A. What is the maximum number of connections that can be ongoing in the network at any one time?
+
+    - [ ] 31
+
+    - [ ] 16
+
+    - [X] 70
+
+    - [ ] 39
+
+    - [ ] 20
+
+![](/CS-5700-Networking-Fundamentals/Lectures/1-kb.png)
+
+
+```Text
+The network’s capacity for concurrent connections isn’t limited by the segment with the fewest circuits if those connections can occur independently on other segments. So, rather than focusing solely on the bottleneck, we should consider the full usage of all circuits in a manner that doesn’t overlap routes.
+
+In this type of network, you can have different independent routes working simultaneously as long as they don’t need the same circuits at the same time. Here’s a breakdown for each segment and how you could potentially maximize this:
+
+	1.	A ↔ B (20 circuits): This direct link can support 20 simultaneous connections.
+	2.	B ↔ C (19 circuits): Similarly, this link can support 19 simultaneous connections.
+	3.	C ↔ D (15 circuits): This link can support 15 simultaneous connections.
+	4.	D ↔ A (16 circuits): This link can support 16 simultaneous connections.
+
+
+If each pair can work independently, you could theoretically sum up all these connections: 20 + 19 + 15 + 16 = 70
+
+
+The total of 70 connections doesn’t imply 70 different conversations spanning across the whole network from one end to another, but rather maximally utilizing each segment for different pairs without overlap. This can mean that, at any given moment, there could be 70 different connections, with each segment handling its part independently.
+```
+
+5. What is a network of networks? When we say that the Internet is a “network of networks,” we mean? Check all that apply (hint: check two or more).
+
+    - [x] The Internet is made up of a lot of different networks that are interconnected to each other.
+
+    - [x] The Internet is made up of access networks at the edge, tier-1 networks at the core, and interconnected regional and content provider networks as well.
+
+    - [] The Internet is the largest network ever built.
+
+    - [ ] The Internet is the fastest network ever built.
+
+6. Packet switching or Circuit-switching? Consider a scenario in which 5 users are being multiplexed over a channel of 10 Mbps.  Under the various scenarios below, match the scenario to whether circuit switching or packet switching is better.
+
+    - `Neither works well in this overload scenario` --> Each user generates traffic at an average rate of 2.1 Mbps, generating traffic at a rate of 15 Mbps when transmitting
+
+      - **Total Required Bandwidth**: 5 users x 2.1 Mbps = 10.5 Mbps average, but potentially spiking to 15 Mbps
+
+      - **Analysis**: The channel is a 10 Mbps line, but users require up to 15 Mbps, which exceeds the channel capacity. Neither circuit nor packet switching could effectively manage this without significant delays or packet loss due to the regular and significant excess of required bandwidth over available bandwidth.
+
+    - `Circuit switching` --> Each user generates traffic at an average rate of 2 Mbps, generating traffic at a rate of 2 Mbps when transmitting
+
+      - **Total Required Bandwidth**: 5 users x 2 Mbps = 10 Mbps
+
+      - **Analysis**: Each user consistently uses 2 Mbps, exactly matching their share of the 10 Mbps channel. In this scenario, circuit switching is ideal because it can allocate a dedicated portion of the channel to each user, ensuring consistent availability without the overhead or variability of packet switching.
+
+    - `Packet switching` --> Each user generates traffic at an average rate of 0.21 Mbps, generating traffic at a rate of 15 Mbps when transmitting.
+
+      - **Total Required Bandwidth**: 5 users x 0.21 Mbps = 1.05 Mbps on average, but spikes to 15 Mbps
+
+      - **Analysis**: The users on average use very little bandwidth but occasionally spike to very high usage that exceeds the total channel capacity. Packet switching is advantageous here because it can handle these variable, bursty traffic patterns more efficiently. Even though the total spike exceeds the channel’s nominal capacity, the likelihood of all users peaking simultaneously is low (assuming the spikes are brief and asynchronous), so packet switching can manage these peaks by buffering and managing the data packets as bandwidth becomes available.
+
+## 1.4 Performance: Delay, Loss, and Throughput in Computer Networks
