@@ -99,26 +99,26 @@ What to look for:
 Will be reviewed in greater detail in chapter 6
 
 **Cable**
-![](/CS-5700-Networking-Fundamentals/Lectures/1-14-15.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-14-15.png)
 
 **DSL**
-![](/CS-5700-Networking-Fundamentals/Lectures/1-16.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-16.png)
 
 **Home**
-![](/CS-5700-Networking-Fundamentals/Lectures/1-17.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-17.png)
 
 **Wireless**
-![](/CS-5700-Networking-Fundamentals/Lectures/1-18.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-18.png)
 
 **Enterprise**
-![](/CS-5700-Networking-Fundamentals/Lectures/1-19.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-19.png)
 
 **Data Centers**
-![](/CS-5700-Networking-Fundamentals/Lectures/1-20.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-20.png)
 
 #### Hosts
 
-![](/CS-5700-Networking-Fundamentals/Lectures/1-21.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-21.png)
 
 ### Physical Media
 
@@ -229,7 +229,7 @@ The network then forwards these packets from one router to the next, across link
     - This is a global action which determines the source-destination paths taken by packets
     - Creates the contents of the forwarding table using a routing algorithm
 
-![](/CS-5700-Networking-Fundamentals/Lectures/1-29.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-29.png)
 
 ### Packet-Switching
 
@@ -269,7 +269,7 @@ The are TWO types of circuit switching:
     - each call is allocated periodic slot(s), and can only transmit at maximum rate of frequency during its time slot
     - these time slots are wider in frequency than FDM but time restricted
 
-![](/CS-5700-Networking-Fundamentals/Lectures/1-34.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-34.png)
 
 Is packet switching a “slam dunk winner”?
 
@@ -286,7 +286,7 @@ Is packet switching a “slam dunk winner”?
 
 ### Internet as a "Network of Networks"
 
-![](/CS-5700-Networking-Fundamentals/Lectures/1-45.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-45.png)
 
 ### 1.3 Knowledge Check
 
@@ -340,7 +340,7 @@ Is packet switching a “slam dunk winner”?
 
     - [ ] 20
 
-![](/CS-5700-Networking-Fundamentals/Lectures/1-kb.png)
+![](/CS-5700-Networking-Fundamentals/Images/1-kb.png)
 
 
 ```Text
