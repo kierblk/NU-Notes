@@ -392,3 +392,5 @@ The total of 70 connections doesn’t imply 70 different conversations spanning 
 
 ## 1.4 Performance
 
+- Packet delay and loss, end-end throughput
+- [Online Lecture (13:55)](https://www.youtube.com/watch?v=hm1y4LsphQQ)
