@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - 'Images/**.jpg'
-      - 'Images/**.jpeg'
-      - 'Images/**.png'
+      - '/Images/**.jpg'
+      - '/Images/**.jpeg'
+      - '/Images/**.png'
 
 jobs:
   build:
