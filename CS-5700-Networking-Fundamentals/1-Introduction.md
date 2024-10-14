@@ -10,7 +10,7 @@ covers the same information.
 - [Slides](/CS-5700-Networking-Fundamentals/Lectures/Chapter-1-v8.2.pdf)
 - [Additional Materials](https://gaia.cs.umass.edu/kurose_ross/videos/1/)
 
-### 1.1 What is the Internet?
+### 1.1 Overview
 
 - Chapter goals; a nuts-and-bolts and a services description. What is a protocol?
 - [Online Lecture (13:35)](https://www.youtube.com/watch?v=74sEFYBBRAY&t=1s)
@@ -46,7 +46,7 @@ Network protocols are computers devices, rather than humans. However, these prot
 
 *Protocols define the format, order of messages sent and received among network entitites, and actions taken on msg transmission and receipt.*
 
-### 1.1 Knowledge Check
+#### 1.1 Knowledge Check
 
 1. Which of the following descriptions below correspond to a "nuts-and-bolts" view of the Internet? Select one or more of the answers below that are correct. [Hint: more than one of answers below are correct].
 
@@ -72,7 +72,7 @@ Network protocols are computers devices, rather than humans. However, these prot
 - [ ] A person reading a book.
 - [x] One person asking, and getting, the time to/from another person.
 
-### 1.2 The Network Edge
+### 1.2 Network Edge
 
 - Access networks, physical media
 - [Online lecture (15:56)](https://www.youtube.com/watch?v=k8NmM-hImBU)
@@ -166,7 +166,7 @@ Some basic facts about physical media...
   - up to <100 Mbps (Starlink) download
   - 270 msec ent-to-end delay (geostationary)
 
-### 1.2 Knowledge Check
+#### 1.2 Knowledge Check
 
 1. Match the Following:
 `Ethernet`, `802.11 WiFi`, `Cable Access Network`, `Digital Subscriber Line`, `4G cellular LTE`
@@ -198,3 +198,51 @@ Some basic facts about physical media...
     E. 4G/5G cellular
 
     F. Satellite channel
+
+### 1.3 Network Core
+
+- Forwarding, routing; packet switching; curcuit switching; a network of networks
+- [Online Lecture (19:03)](https://www.youtube.com/watch?v=f1nUcCdQJ8Y)
+
+The network core consists of a set of routers that are interconnected by a set of communication links
+
+The internet's core operation is baased on a principle of **packet switching** where the end host breaks application-layer messages into chunks of data and put into packets.
+The network then forwards these packets from one router to the next, across links on the path from source to destination. 
+
+#### Two Key network-core functions
+
+1. Forwarding:
+
+    - aka "switching"
+    - This is a local action which moves arriving packets from the router's input link to the appropriate router output link.
+    - Controlled by a forwarding table
+
+2. Routing:
+
+    - This is a global action which determines the source-destination paths taken by packets
+    - Creates the contents of the forwarding table using a routing algorithm
+
+![](/CS-5700-Networking-Fundamentals/Lectures/1-29.png)
+
+#### Packet-Switching
+
+1. Store-and-Forward
+
+    - An entire packet must arrive at a router befire it can be transmitted on the next link
+    - Packet transmission delay: talks L/R seconds to transmit (push out) L-bit packet into link at R bps
+
+    ``` Text
+    A one-hop numerical example:
+    L = 10 Kbits
+    R = 100 Mbps
+    delay = L / R = 0.1 msec
+    ```
+
+2. Queueing
+
+    - Queueing occurs when work arrives faster than can be serviced
+    - If the arrival rate (in bps) to link exceeds transmission rate (bps) for some period of time, packets will queue waiting to be transmitted on an output link. This can lead to packet loss/drop if memory (buffer) in the router fills up. 
+
+#### Circuit Switching
+
+  - An alternative to packet switching
